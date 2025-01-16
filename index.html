@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truck Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><i></i>Truck Order Form</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Order a Truck</h2>
+            <form id="truck-order-form">
+                <label for="truck-type">Truck Type:</label>
+                <select id="truck-type">
+                    <option value="">Select Truck Type</option>
+                    <!-- Add options here -->
+                </select>
+                <label for="cargo-type">Cargo Type:</label>
+                <select id="cargo-type">
+                    <option value="">Select Cargo Type</option>
+                    <!-- Add options here -->
+                </select>
+                <label for="pickup-location">Pickup Location:</label>
+                <input type="text" id="pickup-location">
+                <label for="delivery-location">Delivery Location:</label>
+                <input type="text" id="delivery-location">
+                <label for="pickup-date">Pickup Date:</label>
+                <input type="date" id="pickup-date">
+                <label for="delivery-date">Delivery Date:</label>
+                <input type="date" id="delivery-date">
+                <button id="order-truck-btn">Order Truck</button>
+            </form>
+        </section>
+    </main>
+    <div id="order-summary-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="order-summary"></p>
+        </div>
+    </div>
+    <footer>
+        <!-- Add footer content here -->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
